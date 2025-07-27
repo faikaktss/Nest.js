@@ -79,22 +79,22 @@ Başlamadan önce sisteminizde aşağıdakilerin kurulu olduğundan emin olun:
 Proje, Nest.js'in modüler yapısını takip ederek mantığı net bir şekilde ayırır:
 
 ├── src/
-│   ├── main.ts              # Uygulamanın giriş noktası ve genel ayarlar (görünüm motoru, statik dosyalar)
-│   ├── app.module.ts        # Uygulamanın kök modülü, diğer modülleri bir araya getirir
-│   ├── app.controller.ts    # Genel uygulama rotaları (şu anda sadece "Hello World")
-│   ├── app.service.ts       # Genel uygulama mantığı
-│   └── users/               # Kullanıcıya özgü tüm özellikler için modül
-│       ├── users.module.ts      # Kullanıcı modülü: servisleri ve kontrolcüleri birleştirir
-│       ├── users.controller.ts  # Kullanıcılarla ilgili HTTP isteklerini yönetir (GET /users, POST /users)
-│       ├── users.service.ts     # Kullanıcılarla ilgili iş mantığı ve Prisma ORM etkileşimleri
-│       └── users.service.spec.ts # Kullanıcı hizmeti için birim testleri
-├── views/                   # Handlebars şablon dosyaları
-│   └── index.hbs            # Kullanıcı listesini ve yeni kullanıcı ekleme formunu içeren ana görünüm
-├── prisma/                  # Prisma şema dosyaları ve geçişleri
-│   └── schema.prisma        # Veritabanı şeması tanımı
-├── .env.example             # Çevre değişkenleri için örnek dosya
-├── package.json             # Proje bağımlılıkları ve komutları
-└── README.md                # Bu dosya
+│   ├── main.ts              # Uygulamanın giriş noktası ve genel ayarlar (görünüm motoru, statik dosyalar)\n
+│   ├── app.module.ts        # Uygulamanın kök modülü, diğer modülleri bir araya getirir\n
+│   ├── app.controller.ts    # Genel uygulama rotaları (şu anda sadece "Hello World")\n
+│   ├── app.service.ts       # Genel uygulama mantığı\
+│   └── users/               # Kullanıcıya özgü tüm özellikler için modül\n
+│       ├── users.module.ts      # Kullanıcı modülü: servisleri ve kontrolcüleri birleştirir\n
+│       ├── users.controller.ts  # Kullanıcılarla ilgili HTTP isteklerini yönetir (GET /users, POST /users)\n
+│       ├── users.service.ts     # Kullanıcılarla ilgili iş mantığı ve Prisma ORM etkileşimleri\n
+│       └── users.service.spec.ts # Kullanıcı hizmeti için birim testleri\n
+├── views/                   # Handlebars şablon dosyaları\n
+│   └── index.hbs            # Kullanıcı listesini ve yeni kullanıcı ekleme formunu içeren ana görünüm\n
+├── prisma/                  # Prisma şema dosyaları ve geçişleri\n
+│   └── schema.prisma        # Veritabanı şeması tanımı\n
+├── .env.example             # Çevre değişkenleri için örnek dosya\n
+├── package.json             # Proje bağımlılıkları ve komutları\n
+└── README.md                # Bu dosya\n
 
 
 ## API Uç Noktaları
